@@ -53,10 +53,10 @@
       )[#h(0.0em)]] // когда https://github.com/typst/typst/pull/5768 войдет в релиз, убрать это
   }
   // аналогично предыдущему
-  show list: it => {
-    it
-    par()[#text(size: 0mm)[#h(0.0em)]] // когда https://github.com/typst/typst/pull/5768 войдет в релиз, убрать это
-  }
+  // show list: it => {
+  //   it
+  //   par()[#text(size: 0mm)[#h(0.0em)]] // когда https://github.com/typst/typst/pull/5768 войдет в релиз, убрать это
+  // }
   // обнуление счетчиком рисунков таблиц и уравнений в каждой главе
   show heading.where(level: 1): it => {
     counter(math.equation).update(0)
@@ -140,9 +140,9 @@
   }
   // если пункт списка на несколько строк, то он будет весь выровнен по абзацному отступу, это фикс
   // теперь первая строка с отсупом, остальное нормально (ну собственно так и должно быть)
-  show list.item: it => {
-    par(hanging-indent: -1.25cm, it)
-  }
+  // show list.item: it => {
+  //   par(hanging-indent: -1.25cm, it)
+  // }
 
   // библиография
   set bibliography(
