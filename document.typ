@@ -412,7 +412,7 @@ $
 = Вычислить фрактальную размерность. 
 
 #figure(
-	image("image.png", width: 50%),
+	image("images/image.png", width: 50%),
 	caption: ["Билет 8"]
 )
 
@@ -421,7 +421,7 @@ $
 $
 
 #figure(
-	image("image-1.png", width: 50%),
+	image("images/image-1.png", width: 50%),
 	caption: ["Билет 11"]
 )
 
